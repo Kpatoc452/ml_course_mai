@@ -1,0 +1,8 @@
+﻿variable,parent_configs,free_parameters,min_n,median_n,empty_configs,configs_under_20
+season,1,3,17379,17379.0,0,0
+period,1,3,17379,17379.0,0,0
+workingday,1,1,17379,17379.0,0,0
+year,1,1,17379,17379.0,0,0
+temperature,16,32,1018,1086.0,0,0
+weather,4,8,4253,4361.5,0,0
+demand,144,288,0,84.0,1,27

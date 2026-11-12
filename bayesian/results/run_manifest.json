@@ -1,0 +1,84 @@
+{
+  "source_url": "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip",
+  "source_doi": "10.24432/C5W894",
+  "license": "CC BY 4.0",
+  "sha256_hour_csv": "e03de4ee4ef4dc376ac6e04bf829673c6269e8eba5c60fa121640fa2f829504f",
+  "rows": 17379,
+  "missing_calendar_hours": 165,
+  "states": {
+    "season": [
+      "Зима",
+      "Весна",
+      "Лето",
+      "Осень"
+    ],
+    "period": [
+      "Ночь",
+      "Утро",
+      "День",
+      "Вечер"
+    ],
+    "temperature": [
+      "Прохладно",
+      "Умеренно",
+      "Тепло"
+    ],
+    "weather": [
+      "Ясно",
+      "Туман",
+      "Осадки"
+    ],
+    "workingday": [
+      "Выходной",
+      "Рабочий"
+    ],
+    "year": [
+      "2011",
+      "2012"
+    ],
+    "demand": [
+      "Низкий",
+      "Средний",
+      "Высокий"
+    ]
+  },
+  "parents": {
+    "season": [],
+    "period": [],
+    "workingday": [],
+    "year": [],
+    "temperature": [
+      "season",
+      "period"
+    ],
+    "weather": [
+      "season"
+    ],
+    "demand": [
+      "temperature",
+      "weather",
+      "period",
+      "workingday",
+      "year"
+    ]
+  },
+  "alpha_per_state_per_parent_config": 1.0,
+  "temperature_bins": [
+    0.35,
+    0.65
+  ],
+  "demand_bins": [
+    100,
+    300
+  ],
+  "fit_scope": "all observed hours; descriptive analysis; no predictive test",
+  "python": "3.14.3",
+  "versions": {
+    "numpy": "2.4.4",
+    "pandas": "3.1.0",
+    "matplotlib": "3.10.8",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "ipykernel": "7.4.0"
+  }
+}
